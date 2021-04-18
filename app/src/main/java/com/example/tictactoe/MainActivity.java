@@ -2,6 +2,7 @@ package com.example.tictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    int f = 0;
+
     int gameState[] = {2,2,2,2,2,2,2,2,2};
     int winningPositions[][] = {{0,1,2}, {3,4,5}, {6,7,8}, {0,3,6}, {1,4,7}, {2,5,8}, {0,4,8}, {2,4,6}};
 
@@ -106,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /*public void firstClick(View clickedElement) {
+    public void firstClick(View clickedElement) {
         if(f==0){
             TextView tap = (TextView) findViewById(R.id.tap);
             tap.setVisibility(View.GONE);
@@ -118,17 +121,17 @@ public class MainActivity extends AppCompatActivity {
             clickedElement.setBackgroundColor(Color.parseColor("#3E3D3D"));
             f++;
         }
-    }*/
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*TextView tap = (TextView) findViewById(R.id.tap);
+        TextView tap = (TextView) findViewById(R.id.tap);
         ImageView title = (ImageView) findViewById(R.id.gameTitle);
         title.setX(-1000);
         title.animate().translationXBy(1000).setDuration(2000);
         tap.animate().alpha(1).setDuration(3000);
-        int f = 0;*/
+
     }
 }

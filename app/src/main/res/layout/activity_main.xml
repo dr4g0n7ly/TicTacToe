@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3E3D3D"
+    android:onClick="firstClick"
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
@@ -17,7 +18,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/grid"
-        android:visibility="visible"
+        android:visibility="gone"
         app:columnCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,8 +42,8 @@
             android:layout_height="100dp"
             android:layout_margin="11dp"
             android:layout_marginLeft="13dp"
-            android:tag="1"
-            android:onClick="pClick" />
+            android:onClick="pClick"
+            android:tag="1" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -50,8 +51,8 @@
             android:layout_height="100dp"
             android:layout_margin="11dp"
             android:layout_marginLeft="13dp"
-            android:tag="2"
-            android:onClick="pClick" />
+            android:onClick="pClick"
+            android:tag="2" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -59,8 +60,8 @@
             android:layout_height="100dp"
             android:layout_margin="11dp"
             android:layout_marginLeft="13dp"
-            android:tag="3"
-            android:onClick="pClick" />
+            android:onClick="pClick"
+            android:tag="3" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -68,8 +69,8 @@
             android:layout_height="100dp"
             android:layout_margin="11dp"
             android:layout_marginLeft="13dp"
-            android:tag="4"
-            android:onClick="pClick" />
+            android:onClick="pClick"
+            android:tag="4" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -77,8 +78,8 @@
             android:layout_height="100dp"
             android:layout_margin="11dp"
             android:layout_marginLeft="13dp"
-            android:tag="5"
-            android:onClick="pClick" />
+            android:onClick="pClick"
+            android:tag="5" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -86,8 +87,8 @@
             android:layout_height="100dp"
             android:layout_margin="11dp"
             android:layout_marginLeft="13dp"
-            android:tag="6"
-            android:onClick="pClick" />
+            android:onClick="pClick"
+            android:tag="6" />
 
         <ImageView
             android:id="@+id/imageView8"
@@ -95,8 +96,8 @@
             android:layout_height="100dp"
             android:layout_margin="11dp"
             android:layout_marginLeft="13dp"
-            android:tag="7"
-            android:onClick="pClick" />
+            android:onClick="pClick"
+            android:tag="7" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -104,8 +105,8 @@
             android:layout_height="100dp"
             android:layout_margin="11dp"
             android:layout_marginLeft="13dp"
-            android:tag="8"
-            android:onClick="pClick" />
+            android:onClick="pClick"
+            android:tag="8" />
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -115,7 +116,7 @@
         android:layout_height="114dp"
         android:layout_marginTop="339dp"
         android:layout_marginBottom="59dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/tap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -133,10 +134,10 @@
         android:alpha="0"
         android:clickable="false"
         android:fontFamily="casual"
-        android:text="Tap to Play"
+        android:text="Tap to anywhere Play"
         android:textColor="#F6F4F4"
         android:textSize="24sp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gameTitle" />
@@ -173,4 +174,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
