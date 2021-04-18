@@ -82,11 +82,24 @@ public class MainActivity extends AppCompatActivity {
         Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
         playAgainButton.setVisibility(View.INVISIBLE);
 
-        /*GridLayout gridLayout = (GridLayout) findViewById(R.id.grid);
-        for (int i = 0; i < gridLayout.getChildCount(); i++) {
-            ImageView counter = (ImageView) gridLayout.getChildAt(i);
-            counter.setImageDrawable(null);
-        }*/
+        ImageView clear0=(ImageView) findViewById(R.id.imageView1);
+        ImageView clear1=(ImageView) findViewById(R.id.imageView2);
+        ImageView clear2=(ImageView) findViewById(R.id.imageView3);
+        ImageView clear3=(ImageView) findViewById(R.id.imageView4);
+        ImageView clear4=(ImageView) findViewById(R.id.imageView5);
+        ImageView clear5=(ImageView) findViewById(R.id.imageView6);
+        ImageView clear6=(ImageView) findViewById(R.id.imageView7);
+        ImageView clear7=(ImageView) findViewById(R.id.imageView8);
+        ImageView clear8=(ImageView) findViewById(R.id.imageView9);
+        clear0.setImageDrawable(null);
+        clear1.setImageDrawable(null);
+        clear2.setImageDrawable(null);
+        clear3.setImageDrawable(null);
+        clear4.setImageDrawable(null);
+        clear5.setImageDrawable(null);
+        clear6.setImageDrawable(null);
+        clear7.setImageDrawable(null);
+        clear8.setImageDrawable(null);
 
         for (int i = 0; i < gameState.length; i++) {
             gameState[i] = 2;
